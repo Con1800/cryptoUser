@@ -23,10 +23,10 @@ const Tested = () => {
 
     return (
         <div>
-            <h1>All transaction</h1>
+            <h1 className='text-red-800'>All transaction</h1>
             {transactions.map((transaction) => (
                 <div key={transaction.id}>
-                    <p>Crypto: {transaction.crypto}</p>
+                    <p className='text-4xl'>Crypto: {transaction.crypto}</p>
                     <p>Purchased Price: {transaction.purchased_price}</p>
                     <p>Total Invested: {transaction.total_money_invested}</p>
                     <p>Shares: {transaction.shares}</p>
@@ -36,5 +36,6 @@ const Tested = () => {
         </div>
     )
 }
+
 
 export default Tested

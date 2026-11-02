@@ -28,8 +28,8 @@ const CryptoList = () => {
 
     return (
         <div>
-           <h1>crypto list page here</h1>
-           <p>for loop here list of crypto</p>
+           <h1 className="text-amber-700">crypto list page here</h1>
+           <p className="text-amber-200">for loop here list of crypto</p>
            {cryptos.map((crypto) => (
                 <p key={crypto.id}>
                     {crypto.name}
