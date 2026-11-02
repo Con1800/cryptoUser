@@ -16,7 +16,7 @@ export const create_cryto = async (name: string) => {
 // TRANSACTION ENDPOINTS
 
 export const get_transaction = async (): Promise<Transaction[]> => {
-    const response = await api.get<Transaction[]>("transaction");
+    const response = await api.get<Transaction[]>("transaction/");
     return response.data;
 }
 

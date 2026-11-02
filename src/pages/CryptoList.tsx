@@ -35,6 +35,7 @@ const CryptoList = () => {
                     {crypto.name}
                 </p>
             ))}
+            <p>testing</p>
         </div>
     )
 }

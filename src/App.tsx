@@ -1,8 +1,9 @@
 import './App.css'
-import CryptoList from './pages/CryptoList'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-
+import CryptoList from './pages/CryptoList'
+import Tested from './pages/Tested'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Router>
           <Routes>
             <Route path='/cryptos' element={<CryptoList />} />
+            <Route path='/transaction' element={<Tested />} />
           </Routes>
         </Router>
         
