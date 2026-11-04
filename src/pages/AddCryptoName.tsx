@@ -29,7 +29,7 @@ const AddCryptoName = () => {
                 <button type='submit'>Add Crypto</button>
 
                 {errorMessage && (
-                    <p>{errorMessage}</p>
+                    <p className='text-red-700'>{errorMessage}</p>
                 )}
                 {successMessage && (
                     <p>{successMessage}</p>
