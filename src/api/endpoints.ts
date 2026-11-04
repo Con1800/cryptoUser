@@ -32,3 +32,10 @@ export const create_transaction = async (
     });
     return response.data;
 }
+
+
+export const get_transaction_by_crypto = async (cryptoName: string) => {
+    const response = await api.get(`cryptos/${encodeURIComponent(cryptoName)}/transactions/`);
+    
+    return response.data;
+}

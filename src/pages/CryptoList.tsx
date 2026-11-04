@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { get_cryptos } from "../api/endpoints";
 import type { Crypto } from "../types/crypto";
+import { Link } from "react-router-dom";
 
 const CryptoList = () => {
     // usestate here
@@ -31,9 +32,11 @@ const CryptoList = () => {
            <h1 className="text-amber-700">crypto list page here</h1>
            <p className="text-amber-200">for loop here list of crypto</p>
            {cryptos.map((crypto) => (
-                <p key={crypto.id}>
-                    {crypto.name}
-                </p>
+                <div key={crypto.id}>
+                    <Link to={`/cryptos/${crypto.name}`}>
+                        <p>{crypto.name}</p>
+                    </Link>
+                </div>
             ))}
             <p>testing</p>
         </div>
